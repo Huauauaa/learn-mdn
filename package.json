@@ -6,14 +6,19 @@
   "scripts": {
     "start": "npm run docs:dev",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "test": "mocha --require @babel/register"
   },
   "keywords": [],
   "author": "Harvey <harvey0379@163.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/register": "^7.21.0",
     "@vuepress/plugin-back-to-top": "^1.8.2",
+    "assert": "^2.0.0",
+    "mocha": "^10.2.0",
     "prettier": "^2.2.1",
     "vuepress": "^1.7.1"
-  }
+  },
+  "dependencies": {}
 }
